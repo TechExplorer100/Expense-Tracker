@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Expense Tracker</h2>
+        
+        <div class="input-section">
+            <input type="number" id="amount" placeholder="Amount">
+            <input type="text" id="category" placeholder="Category">
+            <input type="date" id="date">
+            <button id="add-btn">Add Expense</button>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Amount</th>
+                    <th>Category</th>
+                    <th>Date</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="expense-list"></tbody>
+        </table>
+
+        <p id="total-expense"><strong>Total Expense: ₹0.00</strong></p>
+        <canvas id="expenseChart"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
